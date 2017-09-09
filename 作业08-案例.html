@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// - 求1-n之间所有数的和
+    // 1.务必要分清那些是变的那些是不变的  虽然变的会被抽离成参数 但是如果抽离的参数超过4个 就重新理逻辑
+    // function calcSum(n){
+    //   var sum=0;
+    //   for(var i =0;i<=n;i++){
+    //     sum+=i;
+    //   }
+    //   console.log(sum);
+    // }
+
+    // // 调用
+    // calcSum(100);
+
+    // - 求n-m之间所有数的和
+  //   function calcSum(n,m){
+
+  //     if( n>m){
+  //       return;
+  //     }
+  //     var sum = 0;
+  //     for(var i = n;i<=m;i++){
+  //       sum+=i;
+  //     }
+  //     console.log(sum);
+  //   }
+
+  // // 调用
+  // calcSum(200,300);
+
+
+  // - 圆的面积
+
+  // function calcArea(r) {
+  // 	var pi = 3.1415926;
+  // 	var area = pi*r*r;
+  // 	console.log(area);
+  // }
+  // calcArea(10);
+
+  // - 求2个数中的最大值
+
+  // function calcMax(n,m) {
+  // 	if(n > m) {
+  // 		console.log("最大数是"+n);
+  // 	} else {
+  // 		console.log("最大数是"+m);
+  // 	}
+  // }
+  // calcMax(10,8);
+
+    // - 求3个数中的最大值
+
+  //    function calcMax(n,m,l) {
+  // 	if(n > m&&n > l) {
+  // 		console.log("最大数是"+n);
+  // 	} else if(m > l&&m > n) {
+  // 		console.log("最大数是"+m);
+  // 	} else {
+  // 		console.log("最大数是"+l);
+  // 	}
+  // }
+  // calcMax(6,12,2);
+
+
+    // - 判断一个数是否是素数(质数  只能被1和本身整除的数叫质数也叫素数)
+
+
+    function calcZhishu(n) {
+    	for(var i =2;i < n;i++) {
+    		if(n%i == 0) {
+    			console.log(n+"不是质数");
+    			break;
+    		} else {
+    			console.log(n+"是质数");
+    		}
+    	}
+    }  
+    calcZhishu(11);
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // break  破坏     破坏循环 , 终止整个循环
+    // continue  继续   跳出本次循环，继续下一次循环
+    // 
+    // 求整数50～200的第一个能被7整除的数
+    // 1.求50-200直接能被7整除的数
+    // for (var i = 50; i <= 200; i++) {
+    //   if(i%7 == 0){
+    //     console.log(i);
+    //     break;// 当i也就是值56被打到控制台上之后碰到break之后 for循环就结束了
+    //   }
+    // }
+
+    // 求整数1～100的累加值，但要求跳过所有个位为3的数
+    // 要通过for循环找出1-100所有的数
+    // 找出个位数为3的 这个数%10 == 3
+
+    var sum = 0;
+    for(var i = 1;i<= 3;i++ ){
+      if(i%10 == 3){
+        // console.log(i);
+        continue; // 当碰到个位数为3的 直接终止本地循环 进行下一次循环
+      }
+
+      sum+= i;
+    
+    }
+
+    console.log(sum);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

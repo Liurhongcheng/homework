@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1.函数为什么要有参数
+    // 计算 1-100之间的和 和1-50之间的和
+
+    // var sum;
+    // for(var i = 0;i<=100;i++){
+    //   sum+=i;
+    // }
+
+    // var sum;
+    // for (var i = 0; i <= 50; i++) {
+    //   sum += i;
+    // }
+
+    // 下面的括号中 我们来定义函数的参数(只不过这个函数的参数是一个变量)
+
+    // 要定义参数 要把一个功能中 变的量定为参数 
+    // 不变的量作为定值
+    // 我们把num这个变量称之为 形参(形式参数 帮我们占个位置)
+    function calcSum(num) {
+      var sum=0;
+      for (var i = 0; i <= num; i++) {
+        sum += i;
+      }
+
+      console.log(sum);
+    }
+
+    // 你要算1-多少的和 那么就把多少传入到这个函数中
+    calcSum(100);
+
+    calcSum(50);
+    // 我们把具体参与到运算中的参数称之为实参
+  </script>
+</body>
+
+</html>

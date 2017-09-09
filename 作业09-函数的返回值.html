@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		 function calc(a,b){
+      var sum = a+b;
+      // console.log(sum);
+      return sum;
+      // 函数中 是有一个默认的return的值的 值是 undefined
+      // 如果你给return返回一个值 那么整个函数的输出就等于这个值
+      // 任何return之后的语句都不会执行 因为 return是函数的结束
+
+      console.log('你算的真对啊');
+    }
+    // calc(2+4);//=6 // 传参错误 应该+变为,
+
+    // var c = a+b+d;
+    // var c = calc(2,4);
+
+    // console.log(calc(2,4));
+
+    var c= calc(2,4)+6;
+    console.log(c);
+
+	</script>
+</body>
+</html>

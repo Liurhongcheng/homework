@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>数组</title>
+</head>
+<body>
+   <script>
+    //  var name = 'zs'  var score = 90
+
+    // 因为以前 所声明的变量 只能存储一个数据 因此在存储多个数据的时候 就不够用了 因此出现了数组
+
+    // 数组的定义: 一系列数据的项 按照顺序 存储的集合 
+
+    // 如何声明一个数组
+
+    // 声明一个姓名
+    // var name = 'zs';
+    // 声明一个存储姓名的集合-数组
+    // var names = [];//这就是一个数组
+    // var names = ['zs','ls','ww','zl'];
+    // var score = [65,78,87,94,89];
+
+    // var arr = ['zs',65,'ls',true];// 其中包含了字符串 数字 还有布尔值 但是这样的数组是不提倡使用的, 因为在工作中,我们都使用的是同一类型元素的数组
+
+    // 打印数组
+    // console.log(score); // Array 代表数组
+    // 数组的顺序是从0开始的
+    // 其中 顺序是按照自然数一一对应的 0 开始 到无限大  数组中的元素有几个  数组中最后一个元素的索引(下标)是数组的长度-1;
+
+
+    //  如何获取数组中的某一个元素的值(通过索引或下标进行获取的)
+  //  var indexSecond =   arr[3];
+  //  console.log(indexSecond);
+
+
+
+
+// 如何获取数组中有多少个元素(数组的长度)
+  // var arrLong = ['zs','ls','ww','zl','zs1','ls1','ww1','zl1'];
+
+  // console.log(arrLong.length);
+
+
+  var names = ['郭德纲', '郭麒麟', '于谦', '岳云鹏', '烧饼'];
+  // 数组的遍历(for循环)
+  // i= 0
+  // 次数 就是数组的长度  length属性
+  // console.log(names);
+
+    // for(var i = 0 ;i<names.length;i++){
+    //   // 
+    //   console.log(names[i]);
+    // }
+
+  // js中 数组是可变的  长度是可变的
+  // 1.如何把郭德纲这个值变成 孙越呢?
+  
+  // names[0] = '孙越';
+  // console.log(names);
+
+    // names[6] ='郭小宝';
+    // console.log(names);
+
+  //  如何清空数组
+  names.length = 0;
+
+  console.log(names);
+   </script>
+   <div></div>
+</body>
+</html>

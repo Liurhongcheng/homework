@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // - 求1-n之间所有数的和
+    // 1.务必要分清那些是变的那些是不变的  虽然变的会被抽离成参数 但是如果抽离的参数超过4个 就重新理逻辑
+    // function calcSum(n){
+    //   var sum=0;
+    //   for(var i =0;i<=n;i++){
+    //     sum+=i;
+    //   }
+    //   console.log(sum);
+    // }
+
+    // // 调用
+    // calcSum(100);
+
+    // - 求n-m之间所有数的和
+    function calcSum(n,m){
+
+      if( n>m){
+        return;
+      }
+      var sum = 0;
+      for(var i = n;i<=m;i++){
+        sum+=i;
+      }
+      console.log(sum);
+    }
+
+  // 调用
+  calcSum(200,300);
+
+
+    // - 圆的面积
+    // 面积 area
+    // r pi
+    // function calcArea(r){
+    //   // 1.定义PI
+    //   // 什么是常量 常量就是永远不变的量 比如PI  还比如 一年多少天
+    //   // 定义常量我们用的命名规范是 匈牙利命名法
+    //   // 匈牙利命名法 就是 所有的字母都大写 然后每个单词之间用下划线分开
+    //   var PI = 3.14;
+
+    //   var area = PI*r*r;
+
+    //   console.log(area);
+    // }
+
+    // calcArea(10);
+      
+    // console.log(Number.MAX_VALUE);
+    // - 求2个数中的最大值
+    // - 求3个数中的最大值
+    // - 判断一个数是否是素数(质数  只能被1和本身整除的数叫质数也叫素数)
+
+   
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
